@@ -40,10 +40,7 @@ Understanding the executable above:
 | --------------- | ----------- |
 | condor_run      | to run with condor cluster system
 | mpirun          | main mpi executable
-| -v              | verbose, just to control what is happening |
-| -x OPENMPI_DIR  | This is a must, you must set up this variable, ALWAYS |
-| --prefix $OPENMPI_DIR  | This is a must, you must set up this prefix, ALWAYS |
-| -np 4           | The number of cpus |
+| -np 90          | The number of cpus |
 | -machinefile machines  | defining the file where you define which machines to use, do not forget to use only the resources that you need. |
 | hello_world_with_mpi  | the mpi application |
 
