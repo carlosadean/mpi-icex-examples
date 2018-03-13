@@ -35,14 +35,17 @@ To submit a job you can use one of the options below.
 
 Understanding the executable above:
 
-condor_run: to run with condor cluster system
-mpirun: main mpi executable
--v: verbose, just to control what is happening
--x OPENMPI_DIR: This is a must, you must set up this variable, ALWAYS
---prefix $OPENMPI_DIR: This is a must, you must set up this prefix, ALWAYS
--np 4: The number of cpus
--machinefile machines: defining the file where you define which machines to use, do not forget to use only the resources that you need.
-hello_world_with_mpi: the mpi application
+
+| Parameter | Description |
+| --------------- | ----------- |
+| condor_run      | to run with condor cluster system
+| mpirun          | main mpi executable
+| -v              | verbose, just to control what is happening |
+| -x OPENMPI_DIR  | This is a must, you must set up this variable, ALWAYS |
+| --prefix $OPENMPI_DIR  | This is a must, you must set up this prefix, ALWAYS |
+| -np 4           | The number of cpus |
+| -machinefile machines  | defining the file where you define which machines to use, do not forget to use only the resources that you need. |
+| hello_world_with_mpi  | the mpi application |
 
 ### 5.2) condor_submit
 Go to the directory where you mpi app lives and create a submit file and use the command condor_submit to send the job to the cluster. See the example below.
