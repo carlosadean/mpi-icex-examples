@@ -37,7 +37,7 @@ Understanding the executable above:
 
 
 | Parameter | Description |
-| --------------- | ----------- |
+| -------------- | ----------- |
 | condor_run      | to run with condor cluster system
 | mpirun          | main mpi executable
 | -np 90          | The number of cpus |
