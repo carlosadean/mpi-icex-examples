@@ -1,0 +1,12 @@
+universe = vanilla
+executable = /mnt/eups/packages/Linux64/openmpi/1.8.4+0/bin/mpirun
+arguments = -machinefile machines -np 192 /home/carlosadean/mpi-example/hello_world_with_mpi
+should_transfer_files = yes
+when_to_transfer_output = on_exit
+transfer_input_files = monte_carlo_mpi,machines
+
+error = condor.$(Process).err
+output = condor.$(Process).out
+log = condor.$(Process).log
+
+queue
